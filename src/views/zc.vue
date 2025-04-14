@@ -46,6 +46,7 @@
         <button @click="getBand">读取频段</button>
         <button @click="submit">锁定频段</button>
         <button @click="resetNetWork">重启网络</button>
+        <button @click="write('AT+CGEQOSRDP=1')">限速检测</button>
       </div>
 
       <div style="padding: 10px 0;">
