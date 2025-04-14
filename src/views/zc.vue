@@ -46,7 +46,6 @@
         <button @click="getBand">读取频段</button>
         <button @click="submit">锁定频段</button>
         <button @click="resetNetWork">重启网络</button>
-        <button @click="write('AT+CGEQOSRDP=1')">限速检测</button>
       </div>
 
       <div style="padding: 10px 0;">
@@ -66,6 +65,7 @@
       <div>
         <input type="text" v-model="dataW" placeholder="发送自定义AT指令">
         <button @click="write()">发送</button>
+        <button @click="write('AT+CGEQOSRDP=1')">限速检测</button>
       </div>
       <div class="right">
         <textarea id="scroll_text" cols="30" rows="10" v-model="dataR" readonly=""></textarea>
