@@ -40,10 +40,10 @@ jobs:
         clean: true #每次部署时自动将其从Deployment分支中删除
         # single-commit: true #如果您希望在部署分支上进行一次提交而不是保留完整的历史记录
         
-    - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v3
-      with:
-        # Artifact name
-        name: package
-        # A file, directory or wildcard pattern that describes what to upload
-        path: dist
+    # - name: Upload a Build Artifact
+    #   uses: actions/upload-artifact@v3
+    #   with:
+    #     # Artifact name
+    #     name: package
+    #     # A file, directory or wildcard pattern that describes what to upload
+    #     path: dist
